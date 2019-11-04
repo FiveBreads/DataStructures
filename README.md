@@ -46,7 +46,7 @@ ArrayList로 구현
 
 front는 항상 0번째의 인덱스를 가리키고 있으며 이 위치는 비워져 있다. 
 
-'''
+'''c
 int NextPodIdx( int pos )
 {
   if(pos == (n-1)) {
