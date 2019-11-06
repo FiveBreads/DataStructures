@@ -46,16 +46,16 @@ ArrayList로 구현
 
 front는 항상 0번째의 인덱스를 가리키고 있으며 이 위치는 비워져 있다. 
 
-'''c
-int NextPodIdx( int pos )
-{
-  if(pos == (n-1)) {
-    return 0;
-  }else {
-    return pos + 1;
-  }
-}
-'''
+'''c  
+int NextPodIdx( int pos )  
+{  
+  if(pos == (n-1)) {  
+    return 0;  
+  }else {  
+    return pos + 1;  
+  }  
+}  
+'''  
 위의 함수가 큐의 회전을 도와  
 매개변수 pos가 N-1개의 데이터를 가지게 된다면 front의 값, 0을 가지게 하여  
 큐가 꽉 찼음을 알 수 있게 해준다.  
