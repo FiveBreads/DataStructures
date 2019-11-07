@@ -6,7 +6,7 @@ DataStructures
 ### 7.1 큐의 이해  
 큐의 구조는 매우 심플하다. 선입선출(FIFO)  
 
-### 큐의 ADT 정의 
+### 7.2 큐의 ADT 정의 
 > void QueueInit(Queue * pq);  
 - 큐의 초기화한다.  
   
@@ -31,7 +31,7 @@ DataStructures
 - 데이터가 하나 이상이 있다는 것을 보장받는다.  
   
   
-## 큐의 구현에 대한 논리  
+## 7.3 큐의 구현에 대한 논리  
 - 가장 앞선 순서의 데이터를 가리키는 `front`  
   
 - 가장 늦은 순서의 데이터를 가리키는 `rear`  
@@ -39,7 +39,7 @@ DataStructures
 이 두종류의 커서와 ArrayList나 LinkedList로 큐는 구현될 수 있다.  
   
   
-## ArrayList로 구현  
+### 7.4 ArrayList로 구현  
 배열을 이용한 큐의 구현은 꼬리쪽인 rear을 뒤로 미는 형식으로 데이터를 삽입하고  
   
 머리 쪽인 `front`를 움직여 데이터를 삭제한다.  
@@ -51,7 +51,7 @@ DataStructures
 이를 보완하기 위해 원형 큐의 방식으로 구현을 한다.  
   
 
-## 원형 큐(Circular Queue)의 구현  
+### 7.5 원형 큐(Circular Queue)의 구현  
 배열의 크기를 `MOD연산`하여 낮은 인덱스에 데이터를 넣는것은 성공했으나 또하나의 문제가 있다.  
   
 그것은 큐가 꽉 찬 경우와 텅 빈 경우의 `front`가 `rear`보다 한 칸 앞선 위치를 가리키기 때문에  
@@ -82,7 +82,7 @@ int NextPodIdx( int pos )
   
 큐가 꽉 찼음을 알 수 있게 해준다.  
 
-## LinkedList로 구현  
+### 7.6 LinkedList로 구현  
 연결리스트는 구현이 배열보다 상대적으로 쉬운데 그 이유는 메모리 할당을 malloc을 통해 동적으로  
   
 할당하여 인덱스의 **끝이 정해져 있지 않기 때문**이다.  
