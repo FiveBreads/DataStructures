@@ -1,12 +1,13 @@
 # 재귀 Recursion
-[README로 이동](../../README.md)  
 
 함수 내에서 자기 자신을 다시 호출하는 함수를 의미한다.
 
 ```java
-public void Recursive(){
-	System.out.println("Recursive Call");
-	Recursive();
+public class RecursiveSample {
+   public void Recursive() {
+      System.out.println("Recursive Call");
+      Recursive();
+   }
 }
 ```
 
@@ -39,37 +40,49 @@ public class RecursiveSample {
 ```java
 //1
 //시작
-public void recursive( 3 ){
-    if (num <= 0) return; //탈출 조건
-    System.out.println("Recursive Call");
-    Recursive(3-1);
+public class RecursiveSample {
+   public void recursive(3) {
+      if (num <= 0)
+         return; //탈출 조건
+      System.out.println("Recursive Call");
+      Recursive(3 - 1);
+   }
 }
 ```
 ```java
 //2
-public void recursive( 2 ){
-    if (num <= 0) return; //탈출 조건
-    System.out.println("Recursive Call");
-    Recursive(2-1);
+public class RecursiveSample {
+   public void recursive(2) {
+      if (num <= 0)
+         return; //탈출 조건
+      System.out.println("Recursive Call");
+      Recursive(2 - 1);
+   }
 }
 ```
 
 ```java
 //3
-public void recursive( 1 ){
-    if (num <= 0) return; //탈출 조건
-    System.out.println("Recursive Call");
-    Recursive(1-1);
+public class RecursiveSample {
+   public void recursive(1) {
+      if (num <= 0)
+         return; //탈출 조건
+      System.out.println("Recursive Call");
+      Recursive(1 - 1);
+   }
 }
 ```
 
 ```java
 //4
 //종료 후 탈출
-public void recursive( 0 ){
-    if (num <= 0) return; //탈출 조건
-    System.out.println("Recursive Call");
-    Recursive(...);
+public class RecursiveSample {
+   public void recursive(0) {
+      if (num <= 0)
+         return; //탈출 조건
+      System.out.println("Recursive Call");
+      Recursive(...);
+   }
 }
 ```
 
@@ -122,34 +135,50 @@ public class RecursiveSample {
 ```java
 //1
 //시작
-public int factorial (4){
-    if (n == 1) return 1;
-    return 4 * factorial(4-1);
+public class RecursiveSample {
+
+   public int factorial(4) {
+      if (n == 1)
+         return 1;
+      return 4 * factorial(4 - 1);
+   }
 }
 ```
 
 ```java
 //2
-public int factorial (3){
-    if (n == 1) return 1;
-    return 3 * factorial(3-1);
+public class RecursiveSample {
+
+   public int factorial(3) {
+      if (n == 1)
+         return 1;
+      return 3 * factorial(3 - 1);
+   }
 }
 ```
 
 ```java
 //3
-public int factorial (2){
-    if (n == 1) return 1;
-    return 2 * factorial(2-1);
+public class RecursiveSample {
+
+   public int factorial(2) {
+      if (n == 1)
+         return 1;
+      return 2 * factorial(2 - 1);
+   }
 }
 ```
 
 ```java
 //4
 //종료 후 탈출
-public int factorial (1){
-    if (n == 1) return 1;
-    return ...;
+public class RecursiveSample {
+
+   public int factorial(1) {
+      if (n == 1)
+         return 1;
+      return ...;
+   }
 }
 ```
 

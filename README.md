@@ -15,7 +15,7 @@
 
 ## 목차
 
-### 1. [자료구조와 알고리즘의 이해](./MyHash/summarize/Recursive.md)
+### 1. [자료구조와 알고리즘의 이해](./MyHash/summarize/Recursive)
 
 1. 자료구조에 대한 기본적인 이해
 2. 알고리즘의 성능분석 방법
