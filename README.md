@@ -15,12 +15,12 @@
 
 ## 목차
 
-### 1. [자료구조와 알고리즘의 이해](./MyHash/summarize/Recursive)
+### 1. 자료구조와 알고리즘의 이해
 
 1. 자료구조에 대한 기본적인 이해
 2. 알고리즘의 성능분석 방법
 
-### 2. 재귀 Recursion
+### 2. [재귀 Recursion](./MyHash/summarize/Recursive)
 
 1. 함수의 재귀적 호출의 이해
 2. 재귀의 활용
